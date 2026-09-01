@@ -1,10 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace aula05
+﻿namespace aula05
 {
-    internal class Professor
+    class Professor : Pessoa
     {
+        public string Disciplina { get; set; }
+
+        public Professor(string nome, string disciplina) : base(nome)
+        {
+            Disciplina = disciplina;
+        }
+
+        public override void ExibirInformacoes()
+        {
+            Console.WriteLine($"[PROFESSOR]: {Nome}, Disciplina: {Disciplina}");
+        }
     }
 }

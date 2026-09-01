@@ -1,4 +1,4 @@
-﻿namespace aula054
+﻿namespace aula05
 {
     //clase abstrata, serve como molde base que não pode ser instanciada
     class Pessoa
@@ -23,9 +23,10 @@
 
         //Método virtual (polimorfismo)
         //Define um comportamento padrão passível a sobrescrita
-        public virtual void ExibirInfomacoes()
+        public virtual void ExibirInformacoes()
         {
             Console.WriteLine($"Nome: { Nome}");
+        }
         }
     }
 }
